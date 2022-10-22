@@ -13,7 +13,6 @@ async function funcName(url) {
   var flag = "";
 
   data.forEach((obj) => {
-    let objec = obj.currencies;
     name = name + "<br />" + "Offical Name: " + obj.name.official;
     currencyName =
       currencyName + "<br />" + "Currency Name: " + obj &&
