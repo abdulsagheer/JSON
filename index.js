@@ -1,7 +1,7 @@
 async function funcName(url) {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data.currencies);
+  console.log(data.name.official);
 
   var name = "";
   var currencyName = "";
@@ -15,10 +15,7 @@ async function funcName(url) {
   data.forEach((obj) => {
     name = name + "<br />" + "Offical Name: " + obj.name.official;
     currencyName =
-      currencyName + "<br />" + "Currency Name: " + obj &&
-      obj.currencies &&
-      obj.currencies[0] &&
-      obj.currencies[0].name;
+      currencyName + "<br />" + "Currency Name: " + Object.keys(obj.currencies);
     capital = capital + "<br />" + "Capital: " + obj.capital;
     listBorders = listBorders + "<br />" + "Borders: " + obj.borders[0];
     carSigns = carSigns + "<br />" + "Car Sign: " + obj.car.signs;
