@@ -1,3 +1,3 @@
 # JSON
 
-1. Fetching data and displayed over html page
+1. Developed an app to fetching data and displayed over html page
